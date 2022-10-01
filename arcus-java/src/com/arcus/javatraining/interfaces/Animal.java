@@ -1,7 +1,9 @@
 package com.arcus.javatraining.interfaces;
 
-public interface Animal {
+interface Animal {
+	public String myString = "Sudheer";
+	public static final int b = 0;
 
-	public void animalSound() ;
-	
+	public void animalSound();
+
 }

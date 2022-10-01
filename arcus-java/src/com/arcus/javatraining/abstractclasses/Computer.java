@@ -1,8 +1,7 @@
 package com.arcus.javatraining.abstractclasses;
 
-abstract class Computer extends Employee {
+abstract class Computer {
 	
-	abstract public void process();
 	
 	abstract public void display();
 	
@@ -11,6 +10,13 @@ abstract class Computer extends Employee {
 		System.out.println("Hard disk");
 		System.out.println("RAM");
 		System.out.println("Monitor");
+	}
+	
+	public final void strictFeatures() {
+		System.out.println("Common Features of a computer: ");
+		System.out.println("Hard disk");
+		System.out.println("RAM");
+	
 	}
 
 

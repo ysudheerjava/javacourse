@@ -19,8 +19,7 @@ public class CheckedFileException {
  
             // Giving path where file should exists to read
             // content
-            GFG = new FileInputStream(
-                "/home/mayur/GFG.txt");
+            GFG = new FileInputStream("/home/mayur/GFG.txt");
         }
  
         // Catch block to handle exceptions

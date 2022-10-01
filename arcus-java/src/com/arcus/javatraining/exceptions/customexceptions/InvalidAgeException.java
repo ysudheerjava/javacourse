@@ -6,3 +6,6 @@ public class InvalidAgeException extends Exception {
 		super(str);
 	}
 }
+
+
+//try with RuntimeException and checked exception Exception

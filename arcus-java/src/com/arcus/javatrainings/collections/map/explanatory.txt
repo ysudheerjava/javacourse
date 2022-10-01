@@ -1,0 +1,139 @@
+
+Map
+====
+-  The map interface is present in java.util package
+-  represents a mapping between a key and a value. 
+-  The Map interface is not a subtype of the Collection interface. 
+-  Therefore it behaves a bit differently from the rest of the collection types. - A map contains unique keys.
+-  Maps are perfect to use for key-value association mapping 
+
+- A Map cannot contain duplicate keys and 
+- Both keys and values are objects
+- Each key value pair is called Entry.
+- Some implementations allow null key and null values like the HashMap and LinkedHashMap, 
+    but some do not allow null like the TreeMap.
+- The order of a map depends on the specific implementations.
+ For example, TreeMap and LinkedHashMap have predictable orders, while HashMap does not.
+- 
+- There are two interfaces for implementing Map in java. 
+- They are Map and SortedMap, 
+- and three classes: HashMap, TreeMap, and LinkedHashMap.
+
+
+Entry Interface 
+---------------
+
+Entry - I
+
+
+interface Map {
+
+	interface Entry {
+	Object getKey()
+	Object getValue()
+	Object setValue(Object new)
+}
+
+Key Points about HashMap
+-------
+- The underlying data Structure is Hashtable.
+- Duplicate Keys are not Allowed. But Values can be Duplicated.
+- Heterogeneous Objects are allowed for Both Keys and Values.
+- Insertion Order is not preserved and it is based on hash code of the keys. 
+- insertion order is based on hash code of keys
+- null Insertion is allowed for Key (Only Once) 
+- for Values (Any Number of Times)
+- implements serializable and cloneable
+- Preferable for search operations
+
+Methods in HashMap:
+------------------
+1.put(Object key, Object value)
+2. void putAll(Map m)  
+3. boolean containsKey(key)
+4. boolean containsValue(value)
+5. boolean isEmpty()
+6. int size();
+7. clear()
+8. Set keySet() // in keys dups not allowed
+9. Collection values() // there can be dups in values
+10. Set entrySet()
+
+
+LinkedHashMap class:
+---------------
+
+1. Subclass or child of class  HashMap
+2. Underlying data structure is a combination of hashtable and linkedlist
+3. Insertion order is preserved
+
+
+SortedMap Interface
+====================
+
+1. It is the Child Interface of Map.
+2. Key value Pairs are sorted according to some sorting order. 
+3. When the key value pairs are to be in a sorted order, 
+   it is preferable choice to choose SortedMap classes.
+   
+ Methods in SortedMap interface:
+ --------------------------------
+1) Object firstKey();
+2) Object lastKey();
+3) SortedMap headMap(Object key)
+4) SortedMap tailMap(Object key)
+5) SortedMap subMap(Object key1, Object key2)
+
+
+TreeMap class:
+--------------
+1. Duplicate keys are not allowed.
+2. Insertion Order is not preserved as it is base on Some Sorting Order of Keys.
+3. If we are depending on Default Natural Sorting Order then the Keys should be Homogeneous
+   and Comparable.
+4. Otherwise we will get Runtime Exception Saying ClassCastException.
+5. If we defining Our Own Sorting by Comparator then Keys can be Heterogeneous and Non -
+Comparable. 
+
+
+Constructors:
+--------------
+1. TreeMap tree = new TreeMap(); //default sorting order.
+2. TreeMap tree = new TreeMap(Comparator c);
+3. TreeMap t = new  TreeMap(SortedMap m);
+4. TreeMap t = New TreeMap(Map m);
+
+
+
+
+
+
+
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,4 +12,6 @@ class ArithmeticExceptionExample {
 	public static void doMoreStuff() {
 		System.out.println(10 / 0);
 	}
+	
+	
 }

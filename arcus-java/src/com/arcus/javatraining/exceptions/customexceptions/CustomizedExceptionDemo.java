@@ -4,24 +4,23 @@ import java.util.Scanner;
 
 class CustomizedExceptionDemo {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws OverAgeException  {
 
 		try (Scanner myObj = new Scanner(System.in)) {
-			System.out.println("Enter age to join: ");
+			System.out.println("Enter age");
 
 			int age = Integer.parseInt(myObj.nextLine()); // Read user input
-//int age=Integer.parseInt(args[0]);
-			
+
 			if (age > 60) {
-				throw new OverAgeException("Your age exceeded, you are not eligible for recruitment process");
+				throw new OverAgeException("Age exceeded, not eligible for recruitment process");
 			} else if (age < 18) {
-				throw new UnderAgeException("You are under aged, you are not eligible for recruitment process");
+				throw new UnderAgeException("Under aged, you are not eligible for recruitment process");
 
 			} else {
-				System.out.println("Details sent soon by e-mail");
+				System.out.println("Accepted, Details sent by e-mail");
 			}
 		} catch (NumberFormatException e) {
-			// TODO Auto-generated catch block
+			// TODO Auto-generated ca2tch block
 			e.printStackTrace();
 		}
 	}

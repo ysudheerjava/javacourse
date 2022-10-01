@@ -1,0 +1,39 @@
+Wrapper classes
+===============
+Collections hold only java objects. 
+
+They cannot hold primitive types. 
+
+Automatic conversion of Primitive type to object - 
+Object to primitives
+
+
+Primitive Type	Wrapper class
+==============  ==============
+boolean			Boolean
+char			Character
+byte			Byte
+short			Short
+int				Integer
+long			Long
+float			Float
+double			Double
+
+Just as the name says, a wrapper class wraps (encloses) around a primitive data type and 
+gives it an object appearance. 
+
+Autoboxing:
+==========
+The automatic conversion of primitive data type into its corresponding 
+wrapper class
+
+Unboxing: 
+========
+The automatic conversion of wrapper class  into its corresponding primitive types.
+
+
+
+
+
+
+

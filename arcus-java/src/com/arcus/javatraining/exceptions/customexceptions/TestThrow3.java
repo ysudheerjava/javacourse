@@ -1,4 +1,5 @@
-package com.arcus.javatraining.exceptionhandling;
+package com.arcus.javatraining.exceptions.customexceptions;
+
 // Class that uses above MyException  
 public class TestThrow3  
 {  

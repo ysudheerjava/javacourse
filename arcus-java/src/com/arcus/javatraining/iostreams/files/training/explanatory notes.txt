@@ -1,0 +1,100 @@
+Different classes to handle files:
+
+File
+FileWriter
+FileReader
+BufferedWriter
+BufferedReader
+PrintWriter
+
+
+File class methods: 
+-------------------
+
+exists();
+createNewFile();
+mkdir();
+isFile();
+isDirectory();
+
+FileWriter class - Used to write character data to file
+
+FileWriter f = new FileWriter(String fileName);
+FileWriter f = new FileWriter(File f);
+
+FileWriter methods: 
+Methods present in FileWriter;
+=================================
+1. write(int ch) - write single character
+
+fw.write(100);//d
+or fw.write('d');
+
+2. write(char[] ch)
+
+3. write(String s)
+4. flush(): makes sure that the data is emptied from the stream, to guarantee that total data including the last character is also written
+5. close() after writing the file : closes the file
+
+
+FileReader class:
+====================
+
+Constructors:
+-------------
+
+FileReader f = new FileReader(String fileName);
+FileReader f = new FileReader(File f);
+
+Methods:
+1. int read();
+It attempts to read next character from the file and return its Unicode value. If
+the next character is not available then we will get -1.
+2. int i=fr.read();
+3. System.out.println((char)i);
+As this method returns unicode value , while printing we have to perform type
+casting.
+4. int read(char[] ch);
+It attempts to read enough characters from the file into char[] array and returns
+the no of characters copied from the file into char[] array.
+5. File f=new File("abc.txt");
+6. Char[] ch=new Char[(int)f.length()];
+7. void close();
+
+- The main problem with FileWriter is we have to insert line separator manually ,
+  which is difficult to the programmer. ('\n')
+- And even line separator varing from system to system.
+
+
+
+PrintWriter:
+============
+-  This is the most enhanced Writer to write text data to the file.
+-  By using FileWriter and BufferedWriter we can write only character data to the
+	File but by using PrintWriter we can write any type of data to the File.
+
+Constructors:
+
+PrintWriter pw = new  PrintWriter(String name);
+
+Serialization:
+=============
+
+Process of converting an object into a byte Stream.
+
+Deserialization:
+
+Reverse process of serialization, converting the byte stream to an object.  
+
+Marker Interface: Interface without any methods. 
+
+1. We can perform Serialization only for Serilizable objects.
+2. An object is said to be Serilizable if and only if the corresponding class
+implements Serializable interface.
+
+
+
+
+
+
+

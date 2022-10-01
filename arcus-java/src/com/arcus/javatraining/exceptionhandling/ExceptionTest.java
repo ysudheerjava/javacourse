@@ -2,33 +2,35 @@ package com.arcus.javatraining.exceptionhandling;
 
 class ExceptionTest {
 
-	public void doSomething() {
-		System.out.println("Non Static method");
+	public  void method1() {
+		method2();
 	}
 
-	public static void doStuff() {
-		doMoreStuff();
-	}
+	public void method2() {
 
-	public static void doMoreStuff() {
-		
 		System.out.println("Hello");
-		int a = 10;
-		int b =0;
 
-		int division = a / b;
+		try {
+			int a = 10;
+			int b = 0;
 
-		System.out.println(division);
+			int division = a / b;
+
+			System.out.println(division);
+		} catch (ArithmeticException ae) {
+			ae.printStackTrace();
+			System.out.println("Please check the number ...");
+		}
 	}
 
 	public static void main(String[] args) {
 
-		 doStuff();
-
+		ExceptionTest e = new ExceptionTest();
+		e.method1();
+	//	method1();
 		
-		/*
-		 * ExceptionTest myInstance = new ExceptionTest(); myInstance.doSomething();
-		 */
+		
+		System.out.println("After >>>>>>>>>>>>>>>>>>>>>>>>>>>");
 
 	}
 

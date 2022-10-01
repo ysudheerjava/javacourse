@@ -1,15 +1,12 @@
-package com.arcus.javatraining.exceptionhandling;
+package com.arcus.javatraining.exceptions.customexceptions;
 
 public class AgeDoesnotMatchException extends Exception{
 
-	 AgeDoesnotMatchException(String msg){
- 
-	   super(msg);
- }
-	 
-	/*
-	 * public String toString(){ return
-	 * "CustomException[Age is not between 17 and 24]"; }
-	 */
+	AgeDoesnotMatchException(String msg) {
+
+		super(msg);
+	}
+	
+	AgeDoesnotMatchException(){}
   
 }

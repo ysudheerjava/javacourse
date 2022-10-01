@@ -29,12 +29,12 @@ class Student {
 	}
 
 	public static void main(String args[]) {
-		//Student s1 = new Student(111, "Karan");
-		//Student s2 = new Student(222, "Aryan");
-		//Student s3 = new Student();
-		//System.out.println(s3.id);
-		//s1.display();
-		//s2.display();
+		Student s1 = new Student(111, "Karan");
+		Student s2 = new Student(222, "Aryan");
+		Student s3 = new Student();
+		System.out.println(s3.id);
+		s1.display();
+		s2.display();
 		
 		
 		Student student1 = new Student();

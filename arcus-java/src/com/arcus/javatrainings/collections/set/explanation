@@ -1,0 +1,81 @@
+ HashSet:
+=========
+
+- The Underlying Data Structure is Hashtable.
+- The HashSet is a class that implements the Set interface. 
+- It is used to store the objects in a hashtable; 
+- a hashtable is a data structure, which stores data in an ArrayList. 
+- It provides quick access to the data using the array index. 
+- We can insert, update, and remove the elements easily using a HashSet.
+- Insertion Order is not Preserved and it is Based on hashCode of the Objects.
+- Duplicate Objects are Not Allowed. 
+- If we are trying to Insert Duplicate Objects then we won't get any 
+  Compile Time OR Runtime Error. add() Simply Returns false.
+- one null Insertion is Possible.
+- Heterogeneous objects are allowed.
+- HashSet implements Serializable and Cloneable Interfaces
+- If Our Frequent Operation is Search Operation, then HashSet is the Best Choice.
+- Creates an Empty HashSet Object with Default Initial Capacity 16 and 
+- Default Fill Ratio : 0.75.
+- Load Factor: Fill Ratio 0.75 Means After Filling 75% Automatically a New HashSet Object will be Created.
+  This Factor is Called Fill Ratio OR Load Factor.
+  
+  -  HashSet h = new HashSet(int initialCapacity, float fillRatio);
+  -  HashSet h = new HashSet(Collection c);
+
+
+
+LinkedHashSet:
+
+- It is the Child Class of HashSet.
+- It is Exactly Same as HashSet except the following differences:
+
+- based on LinkedList and HashTable
+-Insertion order is preserved
+
+How to chose beteween Hashset and LinkedHashSet
+-----------------------------------------------
+- when maintaining the insertion order of the elements is not our priority, the HashSet will be useful and 
+provide improved performance.
+
+
+
+SortedSet interface:
+-------------------
+
+- Child interface of Set
+- No duplicates are allowed
+- Elements are inserted with some sorting order 
+-Default sorting order - for numerics -ascending order, for alphabets in alphabetical order
+ 
+ Methods in Sorted Set: 
+ ----------------------
+ 
+ 1) Object first(); Returns 1st Element of the SortedSet.
+2) Object last(); Returns Last Element of the SortedSet.
+3) SortedSet headSet(Object obj);
+Returns SortedSet whose Elements are < Object.
+4) SortedSet tailSet(Object obj);
+Returns SortedSet whose Elements are >= Object.
+5) SortedSet subSet(Object obj1, Object obj2);
+Returns SortedSet whose Elements are >= obj1 and < obj2.
+6) Comparator comparator();
+  Returns Comparator Object that Describes Underlying Sorting Technique.
+- If we are using Default Natural Sorting Order then we will get null.
+
+TreeSet class
+=============
+
+- Insertion Order is not Preserved and it is Based on Some Sorting Order.
+- Heterogeneous Objects are Not Allowed.
+- If we are trying to Insert we will get RuntimeException Saying ClassCastException.
+- Duplicate Objects are Not allowed.
+
+obj1.compareTo(obj2)
+-  Returns –ve if and Only if obj1 has to Come Before obj2
+-  Returns +ve if and Only if obj1 has to Come After obj2
+-  Returns 0 if and Only if obj1 and obj2 are Equal
+
+
+
+ 

@@ -2,11 +2,7 @@ package com.arcus.javatraining.abstractclasses;
 
 public class Desktop extends Computer{
 
-	@Override
-	public void process() {
-		// TODO Auto-generated method stub
-		System.out.println();
-	}
+	
 
 	@Override
 	public void display() {
@@ -14,13 +10,11 @@ public class Desktop extends Computer{
 		
 	}
 
-	@Override
 	public void disp2() {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void disp3() {
 		// TODO Auto-generated method stub
 		

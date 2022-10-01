@@ -1,0 +1,156 @@
+5 classes
+
+1. File
+2. FileWriter
+3. FileReader
+4. BufferedWriter
+5. BufferedReader
+
+
+
+Different constructors of File class:
+
+1. File f = new File(String name); //used to create a file and directory
+createNewFile(); and mkdir();
+
+2. File f = new File(String subdirectoryname, String name);
+3. File f = new File(File subdir, String name);
+
+
+FileWriter class
+We can write character data to the file. 
+
+constructor 1:
+--------------
+FileWriter f = new FileWriter(String name);
+
+Example:
+FileWriter f = new FileWriter("myfile.txt");
+
+constructor 2: 
+--------------
+FileWriter f = new FileWriter(File f);
+
+Example:
+
+File f = new File("myfile.txt")
+FileWriter f = new FileWriter(f);
+
+constructor 3: 
+--------------
+
+FileWriter f = new FileWriter(String name, boolean append);
+
+India is my country. All Indians are my brothers and sisters 
+
+constructor 4: 
+--------------
+FileWriter f = new FileWriter(File f, boolean append);
+
+
+write(char ch)  -- used to write a single character
+
+write (char[])
+
+write(String s)
+
+flush(); //guarantees that all the characters have been written to the file. 
+
+close();  // closes the stream
+
+
+FileReader class:
+================
+Read the existing files
+
+FileReader fr=new FileReader(String name);
+
+FileReader fr=new FileReader (File f);
+
+int read(); //reads next character from the file.
+
+int read(char[] ch)
+
+close();
+
+BufferedWriter and BufferedReader classes: 
+==========================================
+
+Buffering concept: 
+
+Output will be moved to a special memory location called buffer. 
+
+BufferedWriter class:
+
+Advatange of BufferedWriter is it reads the data line by line. 
+
+Constructors:
+===============
+BufferedWriter bw=new BufferedWriter(writer w);
+BufferedWriter bw=new BufferedWriter(writer w,int buffersize);
+
+
+BufferedReader:
+===============
+
+Constructors
+------------
+BufferedREader bw=new BufferedReader(Reader r);
+BufferedReader br=new BufferedReader(Reader r,int buffersize);
+
+
+PrintWriter:
+============
+
+PrintWriter pw = new PrintWriter(String s) //accepts name of the file as a string
+
+PrintWriter pw=new PrintWriter(File f); //accepts a file as argument
+
+PrintWriter pw=new PrintWriter(Writer w);// accepts a Writer as argument
+
+1. write(int ch);
+2. write (char[] ch);
+3. write(String s);
+4. flush();
+5. close();
+6. print(char ch);
+7. print (int i);
+8. print (double d);
+9. print (boolean b);
+10. print (String s);
+11. println(char ch);
+12. println (int i);
+13. println(double d);
+14. println(boolean b);
+15. println(String s);
+
+
+
+Serialization:
+--------------
+
+The process of converting an object into a byte stream is called Serialization.
+The byteStream can be saved to a file or can be sent over a netwrok or can be sent to another computer or socket. 
+
+.ser
+
+Deserialization: 
+----------------
+- The reverse process of converting a byte stream to an object. 
+
+Steps to implement serialization: 
+---------------------------------
+
+1. Your object class should implement serializable interface
+2. adding  import java.io.Serializable
+3. FileOutputStream fout = new FileOutputStream(file path);
+4. ObjectOutputStream oos = new ObjectOutputStream(fileout);
+5. out.writeObject(objectname);
+6. out.close(); fileout.close.
+
+
+
+
+
+
+

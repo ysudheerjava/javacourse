@@ -1,0 +1,257 @@
+ArrayList 
+=========
+
+1.ArrayList is based on resizable or growable array.
+2.Duplicates are allowed
+3.Insertion order is preserved
+4.Heterogeneous objects can be inserted in arraylist
+5.Null values can be inserted in the ArrayList
+6.New ArrayList capacity will be calculated using the formula:
+(current capacity*3/2)+1.
+    
+First constructor:
+-------------------
+ArrayList arrayList = new ArrayList(); //creates AL with default size
+
+Second constructor:
+------------------
+ArrayList l = new ArrayList(int initialcapacity); //Specify the initial capacity.
+
+Third constructor:
+------------------
+ArrayList l = new ArrayList(Collection c);
+
+ArrayList implements Serializable, Cloneable and RandomAccess interfaces
+for serialzation and for Random access of elements.
+
+Array list shifts the elements, when ever the element is to be inserted or deleted.
+
+If there are frequent insertions and deletion operations in the collection, then 
+ArrayList must not be chosen. Instead, linkedlist must be chosen.
+
+For frequent retrieval of elements(search operations), ArrayList is the preferable choice. 
+
+
+============================================================================
+
+LinkedList :
+============
+
+Elements are not stored in consecutive memory locations, 
+instead they are stored in different memory locations. 
+
+1. LinkedList is based on doubly linked List
+2. Insertion order is preserved
+3. Duplicates are allowed
+4. Heterogeneous objects are allowed
+5. Nulls are allowed
+
+Constructors for LinkedList:
+
+	LinkedList ll = new LinkedList(); //Constructor without arguments
+	
+	Second constructor:
+	-------------------
+	
+	LinkedList ll = new LL(Collection c);
+	System.out.println(obj); //internally converts the object into a string representation using the method toString();
+	
+
+
+Vector:
+========
+
+Vector is exactly same as arraylist :
+
+1.Vector underlying concept resizable or growable array.
+2.Duplicates allowed
+3.Insertion order is preserved
+4.Heterogeneous objects can be inserted.
+5. Null insertion is possible.
+
+Vector methods:
+
+To add the elements in Vector:
+------------------------------
+
+- add(Object o)
+- add(int index, Object o) 
+- addElement(Object o) 
+
+To remove the elements in Vector:
+------------------------------
+
+- remove(Object o) 
+- removeElement(Object o)
+- remove(int index) 
+- removeElementAt(int index) 
+- clear() 
+- removeAllElements()
+
+To retrieve the elements from vector:
+=====================================
+- get(int index)
+- elementAt(int index)
+- firstElement();
+- lastElement();
+
+To display the size and capacity:
+
+size() //current capacity
+capacity() //capacity
+
+Constsructors: 
+---------------
+
+1.Vector v = new Vector();
+ initial capacity =10;
+  capacity for the new vector will be : 2*current capacity.
+ 
+2. Vector v = new Vector(int initialcapacity) 
+
+3. Vector v = new Vector(int initialcapacity, int incrementalCapacity)
+ 
+4. Vector v = new Vector (Collection c);
+
+
+
+Stack class
+===========
+
+- Subclass of Vector. 
+_ Last in first out.
+
+Constructors :
+
+Stack stack = new Stack();
+
+Methods:
+
+1. push(Object o);
+2. pop(); Pop out the top element of stack.
+3. peek(); returns the element at the top with out removal. 
+4. boolean empty(); //checks whether the stackis emtpy
+5. search(Object o ); returns the offset
+
+Offset: Number from the stack. 
+
+
+Cursors:
+========
+
+Cursors are used to retrieve objects one after the other from the collection. 
+
+3 types:
+
+1. Enumeration
+2. Iterator
+3. ListIterator
+
+1) Enumeration: 
+--------------
+elements()
+
+Enumeration e = vector.elements(); 
+
+Methods:
+--------
+boolean hasMoreElements();
+Object nextElement();
+
+1. Enumeration is used only with Legacy classes, and its not considered to be a universal cursor.
+2. Just reads the elements, cannot remove
+
+2.Iterator - Uni directional cursor or single direction, moves only forward, cannot move backwards
+==========
+
+Iterator iter =  collection.iterator(); //Universal cursor, can be used with any collection
+
+Methods: 
+boolean hasNext()
+Object next()
+remove();
+
+
+ListIterator:
+-------------
+- Sub interface of Iterator
+- Bi-directional cursor: Forward or backward
+- Addition of objects, replacing the existing objects.
+
+listIterator();
+
+ListIterator liter = al.listIterator();
+
+Forward direction:
+===============
+
+hasNext()
+next()
+nextIndex()
+
+Backward direction:
+--------------------
+hasPrevious()
+previous
+previousIndex()
+
+remove()
+set()
+add()
+
+
+Vector is exactly same as arraylist :
+
+1.Vector underlying concept resizable or growable array.
+2.Duplicates allowed
+3.Insertion order preserved
+4.Heterogeneous objects can be inserted
+5. Null insertion is possible
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

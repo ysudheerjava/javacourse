@@ -43,9 +43,20 @@ public class OperatorDemo {
 		//m=n++; //pre increment operator
 		//++n; //Post increment operator
 		
-		System.out.println(m);
-		System.out.println(n);
-		System.out.println(m);
+		/*
+		 * System.out.println(m); System.out.println(n); System.out.println(m);
+		 */
+		
+			int a1=10;  
+			int b1=10;  
+			System.out.println(a1++);
+			System.out.println(a1);
+			System.out.println(++a1);
+			System.out.println(a1++ + ++a1);//10+12=22  
+			System.out.println(b1++ + b1++);//10+11=21 
+			//System.out.println(a1%);
+			  
+		
 		
 		
 	}

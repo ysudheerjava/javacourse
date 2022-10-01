@@ -1,0 +1,4 @@
+Object is the root class of all the classes in Java.
+Generics does not work with primitive types (int, float, char, etc).
+
+<T extends A>  or List<? extends Number>  

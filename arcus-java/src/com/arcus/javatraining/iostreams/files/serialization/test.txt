@@ -1,0 +1,21 @@
+1. Create a text file with the name "pledge.txt" and save the following text  :
+
+"India is my country and all Indians are my brothers and sisters. 
+I love my country and I am proud of its rich and varied heritage. 
+I shall always strive to be worthy of it. 
+I shall give respect to my parents,teachers and elders and treat everyone with courtesy. 
+To my country and my people, I pledge my devotion. 
+In their well being and prosperity alone, lies my happiness."
+
+2. Step 2:
+
+Read the contents of the file from pledge.txt.
+a. Find the total number of characters in the text.
+b. Find the occurences of the letter 'I' in the text.
+c. Replace I with "we".
+
+Step 3:
+
+Save the modified text in another file called "ourpledge.txt"
+
+
