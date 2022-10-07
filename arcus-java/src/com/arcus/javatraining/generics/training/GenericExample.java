@@ -6,31 +6,39 @@ public class GenericExample {
 		
 		Printer<String> printer = new Printer<>("Arcus");
 		printer.print();
-		
+	
 		Printer<Integer> iPrinter = new Printer<>(1000);
 		iPrinter.print();
 		
 		Printer<Double> dPrinter = new Printer<>(300.00);
-		iPrinter.print();
+		dPrinter.print();
+
 		
-			dPrinter.genericMethod("Generic method call..Sudheer");
+		dPrinter.genericMethod(300);
+
+		
+		
+		/*
+		 * dPrinter.genericMethod("Generic method call..Sudheer");
+		 * dPrinter.iGgenericMethod("Generic method call..Sudheer",20,30);
+		 * 
+		 * dPrinter.genericMethod("Generic method call..Sudheer");
+		 * 
+		 * dPrinter.genericMethod(777);
+		 * 
+		 * dPrinter.genericMethod(300.99);
+		 */
 			
-			dPrinter.genericMethod("Generic method call..Sudheer");
-			
-			dPrinter.genericMethod(777);
-			
-			dPrinter.genericMethod(300.99);
 		
 			
-		
 			
-			
-			String myCity = dPrinter.genericReturn("Hyderabad");
-			System.out.println(myCity);
-			
-			
-			Integer myTotal = dPrinter.genericReturn(100);
-			System.out.println(myTotal);
+		/*
+		 * String myCity = dPrinter.genericReturn("Hyderabad");
+		 * System.out.println(myCity);
+		 * 
+		 * 
+		 * Integer myTotal = dPrinter.genericReturn(100); System.out.println(myTotal);
+		 */
 			
 			
 			

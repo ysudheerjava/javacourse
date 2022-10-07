@@ -15,21 +15,23 @@ public class ListIteratorExample {
 
 		}
 		System.out.println(al);
-		ListIterator listitr= al.listIterator();
-		while(listitr.hasNext()) {
-			
-			
-			Integer i=(Integer)listitr.next();
+		
+		ListIterator listitr = al.listIterator();
+		
+		while (listitr.hasNext()) {
+
+			Integer i = (Integer) listitr.next();
 			System.out.println(i);
-			if(i==10) {
+			
+			if (i == 10) {
 				listitr.remove();
 			}
-			if(i==3) {
-				listitr.remove();}
+			if (i == 3) {
+				listitr.remove();
 			}
-		
+		}
+
 		System.out.println(al);
-		
 
 	}
 

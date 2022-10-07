@@ -7,13 +7,17 @@ Wrapper classes:
 
 - The automatic conversion of primitive into an object is known as autoboxing and vice-versa unboxing.
 
-- Java is an object-oriented programming language  A simple file can be treated as an object , an address of a system can be seen as an object , an image can be treated as an object (with java.awt.Image) and a simple data type can be converted into an object (with wrapper classes). 
+- Java is an object-oriented programming language  A simple file can be treated as an object , 
+an address of a system can be seen as an object , 
+an image can be treated as an object (with java.awt.Image) and a simple data type can be converted into an object (with wrapper classes). 
 
 - so we need to deal with objects many times like in Collections, Serialization, Synchronization, etc.
 
 = The primitive data types are not objects; they do not belong to any class; they are defined in the language itself. 
 
-- Collections,  accept only objects to store. in earlier version of java, A data type is to be converted into an object and then added to a Stack or Vector etc. For this conversion, the designers introduced wrapper classes.
+- Collections,  accept only objects to store. in earlier version of java,
+ A data type is to be converted into an object and then added to a Stack or Vector etc. 
+ For this conversion, the designers introduced wrapper classes.
  
 - Different scenarios, where we need to use the wrapper classes.
 -- Collection Framework:
@@ -23,10 +27,11 @@ So what exactly is a wrapper class ?
 
 - What are Wrapper classes?
 
-- As the name says, a wrapper class wraps (encloses) around a data type and gives it an object appearance. 
+- As the name says, a wrapper class wraps (encloses) around a primitive data type and gives it an object appearance. 
 - Wherever, the data type is required as an object, this object can be used.
 -  Wrapper classes include methods to unwrap the object and give back the data type. 
-- It can be compared with a chocolate. The manufacturer wraps the chocolate with some foil or paper to prevent from pollution. The user takes the chocolate, removes and throws the wrapper and eats it.
+- It can be compared with a chocolate. The manufacturer wraps the chocolate with some foil or paper to prevent from pollution. 
+The user takes the chocolate, removes and throws the wrapper and eats it.
 
 - Prior to JDK 5, you need to explicitly wrap a primitive value into an object and unwrap the primitive value from the wrapper object, for example,
 

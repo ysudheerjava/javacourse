@@ -12,10 +12,12 @@ public class StackDemo {
 		st.push("Book1");
 		st.push("Book2");
 		st.push("Book3");
-
 		st.push("Book4");
+		System.out.println("Sta" + st);
 
-		System.out.println(st);
+	//	st.pop();
+
+	//	System.out.println(st);
 
 	}
 

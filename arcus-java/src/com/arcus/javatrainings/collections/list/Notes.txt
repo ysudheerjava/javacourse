@@ -192,7 +192,7 @@ nextIndex()
 Backward direction:
 --------------------
 hasPrevious()
-previous
+previous()
 previousIndex()
 
 remove()
@@ -200,13 +200,7 @@ set()
 add()
 
 
-Vector is exactly same as arraylist :
 
-1.Vector underlying concept resizable or growable array.
-2.Duplicates allowed
-3.Insertion order preserved
-4.Heterogeneous objects can be inserted
-5. Null insertion is possible
 
 
 

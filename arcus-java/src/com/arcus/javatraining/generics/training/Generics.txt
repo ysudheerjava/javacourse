@@ -1,0 +1,165 @@
+https://www.youtube.com/watch?v=K1iu1kXkVoA
+
+Generics are used to create classes that work with different data types. 
+
+An entity such as class, interface, or method that operates on a parameterized type is a generic entity.
+
+The Object is the superclass of all other classes, and Object reference can refer to any object.
+
+These features lack type safety. Generics add that type of safety feature. We wix ll discuss that type of safety feature in later examples.
+
+
+What generics do and why they exist?
+
+Lets create a class, holds an integer value that we give in, and then print out that integer when ever we wanted to. 
+
+public class IntegerPrinter{
+
+Integer thingToPrint;
+
+//constructor which takes in thingToPrint value
+
+public IntegerPrinter(Integer thingToPrint ){
+this.thingToPrint = thingToPrint;
+}
+
+//create a method to print this out when ever its required
+
+public void print(){
+System.out.println(thingToPrint); 
+}
+
+}
+
+To use this in our class
+
+public class GenericsExample{
+
+public static void main(String args[]){
+IntegerPrinter printer = new IntegerPrinter(23);
+
+}
+}
+
+To use Double,String, Floats, Dogs, Cats ..copy same class and change...
+
+Code duplication,
+Generics come into picture.
+
+public class Printer <T>{  // Type parameter
+Integer thingToPrint;
+
+//constructor which takes in thingToPrint value
+
+public Printer(T thingToPrint ){
+this.thingToPrint = thingToPrint;
+}
+
+//create a method to print this out when ever its required
+
+public void print(){
+System.out.println(thingToPrint); 
+}
+
+}
+
+
+To use it in our class
+
+
+public class GenericsExample{
+
+public static void main(String args[]){
+Printer<Integer> printer = new Printer<>(23);
+printer.print();
+
+}
+
+} 
+
+In the same class,
+
+public class GenericsExample{
+
+public static void main(String args[]){
+Printer<Integer> printer = new Printer<>(23);
+printer.print();
+
+Printer<Double> doublePrinter = new Printer<>(33.5);
+doublePrinter.print();
+
+}
+
+} 
+
+one thing to know is that Generics wont work with primitives, like int
+
+// does not work //Printer<int> printer = new Printer<>(23);
+
+We need to use wrapper class.
+
+
+Lets try to create a method that can take in any type of object  
+
+public class GenericsExample{
+
+public static void main(String args[]){
+Printer<Integer> printer = new Printer<>(23);
+printer.print();
+
+Printer<Double> doublePrinter = new Printer<>(33.5);
+doublePrinter.print();
+
+shout("John");
+shout(57);
+shout()
+
+}
+
+
+private static <T> void shout (T thingToShout){
+
+sysout(thingToShout + "!!!!");
+
+}
+
+
+} 
+
+
+You can multiple parameters too in the shout method....
+
+private static <T,V> void shout (T thingToShout, V another){
+
+sysout(thingToShout + "!!!!");
+sysout(other + "!!!!");
+
+}
+
+8698010101
+
+
+You can even return:
+
+private static <T,V> T shout (T thingToShout, V another){
+
+sysout(thingToShout + "!!!!");
+sysout(other + "!!!!");
+
+return thingToShout;
+
+}
+
+
+
+
+
+In the main method :
+
+s
+
+
+
+
+
+ 

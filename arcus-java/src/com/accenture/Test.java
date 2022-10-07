@@ -6,8 +6,7 @@ import java.util.StringTokenizer;
 public class Test {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 		String myString = "How are you";
 		String myAnotherString = "Where are you";
 

@@ -36,24 +36,29 @@ public class TreeMapExample {
 					map.put(key, value);
 			}
 		}
-		
+
 		/*
 		 * for (Map.Entry<String, Integer> m : map.entrySet()) { if
 		 * (m.getValue().equals(0)) { map.remove(m.getKey()); } }
 		 */
-		 
-		
-		
-		  for(Iterator<Map.Entry<String, Integer>> it = map.entrySet().iterator();
-		  it.hasNext(); ) { Map.Entry<String, Integer> entry = it.next();
-		  if(entry.getValue().equals(0)) { it.remove(); } }
-		 
-	
+
+		for (Iterator<Map.Entry<String, Integer>> it = map.entrySet().iterator();
+
+				it.hasNext();)
+
+		{
+
+			Map.Entry<String, Integer> entry = it.next();
+			if (entry.getValue().equals(0)) {
+				it.remove();
+			}
+		}
+
 		return map;
 	}
 
 	public static void main(String[] args) {
-		String strArr[] = { "Y:-9","D:33", "X:-3", "Y:1", "X:-4", "B:3", "X:5", "X:4", "E:1","N:0","D:-33" };
+		String strArr[] = { "Y:-9", "D:33", "X:-3", "Y:1", "X:-4", "B:3", "X:5", "X:4", "E:1", "N:0", "D:-33" };
 		Map<String, Integer> map = GroupTotals(strArr);
 		System.out.println("Final Result: ");
 		for (Map.Entry<String, Integer> m : map.entrySet()) {
