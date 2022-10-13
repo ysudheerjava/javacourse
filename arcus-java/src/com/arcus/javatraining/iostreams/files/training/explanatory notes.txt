@@ -7,7 +7,6 @@ BufferedWriter
 BufferedReader
 PrintWriter
 
-
 File class methods: 
 -------------------
 

@@ -9,6 +9,7 @@ public class LinkedHashSetExample{
                set.add("Kitkat");   
                set.add("Mars");  
                set.add("Hersheys");  
+              
                Iterator<String> i=set.iterator();  
                while(i.hasNext())  
                {  

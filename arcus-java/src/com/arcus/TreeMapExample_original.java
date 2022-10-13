@@ -4,16 +4,18 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.StringTokenizer;
 import java.util.TreeMap;
 
-public class TreeMapExample {
+public class TreeMapExample_original {
 	public static Map<String, Integer> GroupTotals(String[] strArr) {
 		/*
 		 * Map<String, Integer> map = Collections
 		 * .synchronizedMap(Collections.synchronizedMap(new TreeMap<String,
 		 * Integer>()));
 		 */
+		
 		Map<String, Integer> map = new HashMap<String, Integer>();
 
 		for (String str : strArr) {
@@ -42,17 +44,18 @@ public class TreeMapExample {
 		 * (m.getValue().equals(0)) { map.remove(m.getKey()); } }
 		 */
 
-		for (Iterator<Map.Entry<String, Integer>> it = map.entrySet().iterator();
-
-				it.hasNext();)
-
-		{
-
+		for (Iterator<Map.Entry<String, Integer>> it = map.entrySet().iterator(); it.hasNext();) {
 			Map.Entry<String, Integer> entry = it.next();
 			if (entry.getValue().equals(0)) {
 				it.remove();
 			}
 		}
+
+		/*
+		 * Iterator it = map.entrySet().iterator(); while (it.hasNext()) { Entry item =
+		 * (Entry) it.next(); if (item.getValue().equals(0)) { it.remove(); } //
+		 * it.remove(); }
+		 */
 
 		return map;
 	}

@@ -17,7 +17,7 @@ class HashSetDemo {
 		h.add(null);
 		h.add(10);
 		h.add("Arcus");
-		
+		h.add("B");	
 		System.out.println(h.add("Z"));
 		
 		
