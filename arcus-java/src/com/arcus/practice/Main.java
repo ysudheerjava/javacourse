@@ -44,6 +44,9 @@ class Main {
 	public static void main(String[] args) {
 		try (// keep this function call here
 				Scanner s = new Scanner(System.in)) {
+			
+			//String strArr = s.nextLine();
+			
 			String[] strArr = s.nextLine().replaceAll("[ \"{}\\]\\[(new|String)]", "").split(",");
 
 			/*

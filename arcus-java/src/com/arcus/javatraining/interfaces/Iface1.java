@@ -9,12 +9,20 @@ interface Iface1 {
 	public void add(int i, int j);
 	
 	
-
+	
+	
 	default void myMethod() {
 
 		System.out.println("Default Method of interface");
 	}
 
+	
+	default void myMethod11() {
+
+		System.out.println("Default Method of interface");
+	}
+
+	
 	public static void myMethod1() {
 		System.out.println("Static method of interface");
 	}
