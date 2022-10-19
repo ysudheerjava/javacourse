@@ -16,7 +16,6 @@ public class SerializeDemo {
 		student.studentName = "John";
 
 		FileOutputStream fos = new FileOutputStream("student.ser");
-
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 
 		oos.writeObject(student);
