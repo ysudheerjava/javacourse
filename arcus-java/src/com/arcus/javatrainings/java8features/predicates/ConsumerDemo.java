@@ -23,6 +23,8 @@ public class ConsumerDemo {
 		};
 		
 		Predicate<Employee> e= s->s.salary>=40000;
+		
+		
 		Consumer<Employee> c= s1->{
 			System.out.println("Employee name: " + s1.name);
 			System.out.println("Employee Salary: " + s1.salary);
@@ -31,17 +33,28 @@ public class ConsumerDemo {
 			
 		};
 
-		Employee[] empArray = { new Employee("Pam", 330000),new Employee("Sam", 60000), new Employee("Ram", 10000), new Employee("Sam", 40000),
-				new Employee("Bam", 5000), };
+		Employee[] empArray = { 
+				new Employee("Pam", 330000),
+				new Employee("Sam", 60000),
+				new Employee("Ram", 10000),
+				new Employee("Sam", 40000),
+				new Employee("Bam", 5000)};
 
 		for (Employee emp : empArray) {
        
+			
+			if(e.test(emp)) {
 			c.accept(emp);
+			}
+			
+			
 			/*
 			 * if(e.test(emp)) { System.out.println("Employee name: " + emp.name);
 			 * System.out.println("Employee Salary: " + emp.salary);
 			 * System.out.println("Employee Band: " + f.apply(emp)); System.out.println(); }
 			 */
+			 
+			 
 
 		}
 	}
