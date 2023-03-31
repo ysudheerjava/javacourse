@@ -14,8 +14,17 @@ public class StackDemo {
 		st.push("Book3");
 		st.push("Book4");
 		System.out.println("Sta" + st);
+		
+		for(Object st1:st) {
+			System.out.println(st1);
+		}
 
-	//	st.pop();
+	st.pop();
+	
+	for(Object st1:st) {
+		System.out.println(st1);
+	}
+
 
 	//	System.out.println(st);
 

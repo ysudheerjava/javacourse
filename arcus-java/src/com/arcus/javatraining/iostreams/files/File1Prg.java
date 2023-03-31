@@ -6,7 +6,7 @@ public class File1Prg {
 	public static void main(String[] args)throws IOException
 	{
 
-	File f1 = new File("MySubDir2"); //subdrectory
+	File f1 = new File("myarcusdirectory"); //subdrectory
 	f1.mkdir();
 		
 	/*

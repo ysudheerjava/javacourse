@@ -35,9 +35,9 @@ public class CustomCheckedException{
    
    public static void main(String args[]) {
       Scanner sc= new Scanner(System.in);
-      System.out.println("Enter the name of the person: ");
+      System.out.println("Enter the name of the Student: ");
       String name = sc.next();
-      System.out.println("Enter the age of the person: ");
+      System.out.println("Enter the age of the Student: ");
       int age = sc.nextInt();
       CustomCheckedException obj = new CustomCheckedException(name, age);
       obj.display();

@@ -27,7 +27,21 @@ public class ComparotorExample {
 		Iterator itr2 = al.iterator();
 		while (itr2.hasNext()) {
 			Person st = (Person) itr2.next();
-			System.out.println(st.rollno + " " + st.name + " " + st.age);
+			System.out.println("Age Comparator"+st.rollno + " " + st.name + " " + st.age);
+		}
+		
+		
+		
+		
+	//	Collections.sort(al, new AgeComparatorLambda());
+	
+	//Collections.sort(al, (Person s1,Person s2)-> compare(s1.age, s2.age);
+		
+	
+		Iterator itr3 = al.iterator();
+		while (itr3.hasNext()) {
+			Person st = (Person) itr3.next();
+			System.out.println("Age Comparator Lambda"+st.rollno + " " + st.name + " " + st.age);
 		}
 
 	}

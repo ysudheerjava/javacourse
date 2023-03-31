@@ -6,8 +6,8 @@ public class Demo1Impl extends Demo1 {
 		// TODO Auto-generated method stub
 		
 		Demo1Impl dm = new Demo1Impl();
-disp1();
-dm.disp2();
+		disp1();
+		dm.disp2();
 	}
 
 	@Override

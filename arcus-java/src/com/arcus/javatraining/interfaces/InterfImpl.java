@@ -1,13 +1,15 @@
 package com.arcus.javatraining.interfaces;
-public class InterfImpl implements Interf1 {
 
-	
-	public int m1(int arg1, int arg2) {
-		return arg1+arg2;
+import com.arcus.javatraining.interfaces.functional.Interf4;
+
+public class InterfImpl implements Interf4 {
+
+	public String m4(String arg1, String arg2) {
+		return arg1 + arg2;
 	}
- 
-	
-	
-	
- 
+
+	public String m3(String arg1, String arg2) {
+		return arg1 + arg2;
+	}
+
 }

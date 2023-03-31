@@ -32,9 +32,12 @@ public class MethodOverloadingExample {
 		int sum = mle.addNumbers(10, 20);
 
 		int sum2 = mle.addNumbers(10, 20, 30);
+		
+		mle.addNumbers();
 
 		System.out.println("The sum1 is: " + sum);
 		System.out.println("The sum2 is: " + sum2);
+		
 		
 		mle.addNumbers();
 

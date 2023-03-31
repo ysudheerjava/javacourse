@@ -3,11 +3,10 @@ import java.io.FileInputStream;
 public class FileInputStreamSingleCharExample {  
      public static void main(String args[]){    
           try{    
-            FileInputStream fin=new FileInputStream("D:\\testout.txt");    
+            FileInputStream fin=new FileInputStream("filewriter.txt");    
             int i=fin.read();  
             System.out.print((char)i);    
-  
-            fin.close();    
+              fin.close();    
           }catch(Exception e){System.out.println(e);}    
          }    
         }  

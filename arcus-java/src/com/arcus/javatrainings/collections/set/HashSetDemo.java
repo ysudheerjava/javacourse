@@ -9,7 +9,7 @@ class HashSetDemo {
 		
 		//HashSet h1 = new HashSet(20);
 		
-		HashSet<String> hs = new HashSet<String>(20,0.75F);
+		HashSet<String> hs = new HashSet<String>();
 		h.add("B");
 		h.add("C");
 		h.add("D");

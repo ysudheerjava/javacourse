@@ -2,45 +2,30 @@ package com.arcus.javatraining.exceptionhandling;
 
 public class ExceptionDemo {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public void doStuff() {
+		doMoreStuff();
+	}
 
-		int i = 10;
-		int j = 0;
-
-		int[] arr = new int[2];
-
+	public void doMoreStuff() {
 		try {
-			System.out.println("Hello");// Statement1
-			arr[3] = 10;// ArrayIndexOutofBounds
-			System.out.println(i / j);// ArithmeticException
-
-		}
-
-		catch (ArrayIndexOutOfBoundsException ae) {
-			ae.printStackTrace();
-			System.out.println("ArrayIndexOutOfBoundsException handled");
-
-		}
-
-		catch (ArithmeticException e) {
+		doMuchMoreStuff();
+		}catch(ArithmeticException e) {
 			e.printStackTrace();
-			System.out.println("You are trying to divide a number with zero");
 		}
+	}
 
-		catch (Exception e) {
+	public void doMuchMoreStuff() {
 
-			// e.printStackTrace();
-			e.getMessage();
-			System.out.println("Exception");
+		int a = 10;
+		int b = 0;
+		System.out.println(a / b);//arithmetic exception
+		System.out.println("Done doing stuff");
+	}
 
-		}
-		
-		finally{
-			System.out.println("In finally block....");
-		}
+	public static void main(String args[]) {
 
-		System.out.println("Out side try catch finally blocks...");
+		ExceptionDemo d = new ExceptionDemo();
+		d.doStuff();
 
 	}
 

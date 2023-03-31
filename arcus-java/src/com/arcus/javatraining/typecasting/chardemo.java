@@ -5,7 +5,8 @@ public class chardemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		char a='5';
+		//char a='5';
+		char a='d';
 		System.out.println(a);//5
 		
 		char b='c';

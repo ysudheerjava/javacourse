@@ -1,17 +1,22 @@
 package com.arcus.javatrainings.threads;
 
-public class ThreadDemo extends Thread {
+public class ThreadDemo {
+	
 
-	public static void main(String[] args) {
-		
-		int values[] = {10,20,30,40};
-		
-		for (int i=1;i<=5; i++) {
-			values[i]=i*2;
+	public static void main(String[] args)
+		{
+		MyThread t=new MyThread();//Instantiation of a Thread
+		t.start();//starting of a Thread
+		for(int i=0;i<5;i++)
+			{
+			System.out.println("Execution of main thread");
+			}
 		}
-		
-		
-
 	}
+	/*
+	 * Execution of childThread Execution of childThread Execution of childThread
+	 * Execution of childThread Execution of childThread Execution of main thread
+	 * Execution of main thread Execution of main thread Execution of main thread
+	 * Execution of main thread
+	 */
 
-}

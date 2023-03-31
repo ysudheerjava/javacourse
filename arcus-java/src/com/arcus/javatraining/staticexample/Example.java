@@ -7,10 +7,12 @@ public class Example {
 	Example() {
 		name = "Stalin";
 		age = 25;
+	
 	}
 
 	public static void main(String args[]) {
 		new Example();
+		name ="X";
 		System.out.println(Example.name);
 		System.out.println(Example.age);
 	}

@@ -5,14 +5,19 @@ import java.util.*;
 class TreeSetDemo {
 	public static void main(String[] args) {
 		TreeSet t = new TreeSet(new MyComparator());// 1
-		t.add(10);
-		t.add(0); // compare(0,10); //1
-		t.add(15); // compare(15,10); //-1
-		t.add(5);// compare(5,15);// +ve
-		//compare(5,10); +1
-//compare(5,0); -1
-		t.add(20); // compare(20,15); -1
-		t.add(20); // compare(20,20); 0
+		
+		  t.add(10);
+		  t.add(0); // compare(0,10); //1 
+		  t.add(15); // compare(15,10); //-1
+		  t.add(5);// compare(5,15);// +ve //compare(5,10); +1 //compare(5,0); -1
+		  t.add(20); // compare(20,15); -1 t.add(20); // compare(20,20); 0
+		 		
+		
+		
+		t.add("A");
+		
+		
+		
 		System.out.println(t);// [20, 15, 10, 5, 0]
 	}
 }

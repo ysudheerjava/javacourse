@@ -20,8 +20,10 @@ public class LinkedHashMapExample {
 
 		// System.out.println(linkedHashMap);
 
-		linkedHashMap.put(100, "Vinod");
-		System.out.println(linkedHashMap.put(100, "Harish"));
+		/*
+		 * linkedHashMap.put(100, "Vinod"); System.out.println(linkedHashMap.put(100,
+		 * "Harish"));
+		 */
 
 		Set<Integer> s = linkedHashMap.keySet(); //
 		System.out.println(s);
@@ -29,11 +31,13 @@ public class LinkedHashMapExample {
 		Collection<String> col = linkedHashMap.values();
 		System.out.println(col);
 
-		Set<?> set = linkedHashMap.entrySet();
-		System.out.println(set);
+		Set<?> set = linkedHashMap.entrySet(); // Entry will have key-value
+
+		System.out.println("Getting the Entries from set: " + set);
 
 		Iterator<?> itr = set.iterator();
 
+		System.out.println("Iterating entries from set: ");
 		while (itr.hasNext()) {
 			Map.Entry m = (Map.Entry) itr.next();
 			System.out.println(m.getKey() + "|" + m.getValue());

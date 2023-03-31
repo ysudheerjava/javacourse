@@ -1,5 +1,7 @@
 package com.arcus.javatraining.array;
 
+import java.util.Arrays;
+
 public class ArrayDemo {
 
 	public static void main(String[] args) {
@@ -18,45 +20,60 @@ public class ArrayDemo {
 		System.out.println("Third element of array: " + myArray[2]);
 		System.out.println("Fourth element of array: " + myArray[3]);
 		
+		char[] charArray = new char[3];
+		charArray[0]='A';
+		charArray[1]='f';
+		charArray[2]='B';
 		
-
-		System.out.println();
-
-		System.out.println("Length of my array: " + myArray.length);
-		System.out.println();
-
-		System.out.println("Using For Loop:::: ");
-
-		for (int i = 0; i < myArray.length; i++) {
-
-			System.out.println(myArray[i]);
+		System.out.println(Arrays.toString(charArray));
+		for (int i =0; i < charArray.length; i++) {
+			
+			System.out.println(charArray[i]);
 		}
-
-		System.out.println();
-
-		String myStringArray[] = new String[4];
-
-		myStringArray[0] = "Ram";
-		myStringArray[1] = "Sam";
-		myStringArray[2] = "Ben";
-		myStringArray[3] = "Ken";
-
-		System.out.println("First element of array: " + myStringArray[0]);
-		System.out.println("Second element of array: " + myStringArray[1]);
-		System.out.println("Third element of array: " + myStringArray[2]);
-		System.out.println("Fourth element of array: " + myStringArray[3]);
-		System.out.println();
-
-		System.out.println("Length of String array: " + myStringArray.length);
-
-		System.out.println();
-
-		System.out.println("Using For Loop for String Array:::: ");
-
-		for (int i = 0; i < myStringArray.length; i++) {
-
-			System.out.println(myStringArray[i]);
-		}
+		
+		
+		
+		
+		
+		/*
+		 * 
+		 * 
+		 * 
+		 * 
+		 * System.out.println();
+		 * 
+		 * System.out.println("Length of my array: " + myArray.length);
+		 * System.out.println();
+		 * 
+		 * System.out.println("Using For Loop:::: ");
+		 * 
+		 * for (int i = 0; i < myArray.length; i++) {
+		 * 
+		 * System.out.println(myArray[i]); }
+		 * 
+		 * System.out.println();
+		 * 
+		 * String myStringArray[] = new String[4];
+		 * 
+		 * myStringArray[0] = "Ram"; myStringArray[1] = "Sam"; myStringArray[2] = "Ben";
+		 * myStringArray[3] = "Ken";
+		 * 
+		 * System.out.println("First element of array: " + myStringArray[0]);
+		 * System.out.println("Second element of array: " + myStringArray[1]);
+		 * System.out.println("Third element of array: " + myStringArray[2]);
+		 * System.out.println("Fourth element of array: " + myStringArray[3]);
+		 * System.out.println();
+		 * 
+		 * System.out.println("Length of String array: " + myStringArray.length);
+		 * 
+		 * System.out.println();
+		 * 
+		 * System.out.println("Using For Loop for String Array:::: ");
+		 * 
+		 * for (int i = 0; i < myStringArray.length; i++) {
+		 * 
+		 * System.out.println(myStringArray[i]); }
+		 */
 
 	}
 }

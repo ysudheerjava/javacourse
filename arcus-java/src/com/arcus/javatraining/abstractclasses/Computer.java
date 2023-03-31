@@ -6,7 +6,8 @@ abstract class Computer {
 	abstract public void display();
 	
 	public void generalFeatures() {
-		System.out.println("Common Features of a computer: ");
+		System.out.println("Comm"
+				+ "''''''''''''''''''''''''''''''''''''''''''''''on Features of a computer: ");
 		System.out.println("Hard disk");
 		System.out.println("RAM");
 		System.out.println("Monitor");

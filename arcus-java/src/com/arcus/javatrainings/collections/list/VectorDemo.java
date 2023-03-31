@@ -18,7 +18,6 @@ public class VectorDemo {
 		Vector v1= new Vector(100, 10);
 		
 		
-
 		motorBikes.add("Yamaha");
 		motorBikes.add("Honda");
 		motorBikes.add("Bullet");

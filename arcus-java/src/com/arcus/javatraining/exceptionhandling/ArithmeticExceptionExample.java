@@ -6,7 +6,11 @@ class ArithmeticExceptionExample {
 	}
 
 	public static void doStuff() {
+		try {
 		doMoreStuff();
+		}catch(ArithmeticException a) {
+			a.printStackTrace();
+		}
 	}
 
 	public static void doMoreStuff() {

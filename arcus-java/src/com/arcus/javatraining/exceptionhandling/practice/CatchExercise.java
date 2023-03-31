@@ -1,4 +1,4 @@
-package com.arcus.javatraining.exceptions.customexceptions;
+package com.arcus.javatraining.exceptionhandling.practice;
 
 public class CatchExercise {
 	 public static void main(String[] args) {

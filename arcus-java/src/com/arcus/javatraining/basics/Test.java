@@ -9,7 +9,7 @@ import java.util.Set;
 
 class Test {
 	public static void main(String[] args) {
-		// print distinct alphabets in a letter.
+		//print distinct alphabets in a letter.
 		Set s = new HashSet();
 		String str = "Malayalam";
 		

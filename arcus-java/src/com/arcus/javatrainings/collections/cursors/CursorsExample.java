@@ -15,6 +15,8 @@ public class CursorsExample {
 		}
 
 		System.out.println(vector);
+		
+		
 		Enumeration en = vector.elements();
 
 		while (en.hasMoreElements()) {

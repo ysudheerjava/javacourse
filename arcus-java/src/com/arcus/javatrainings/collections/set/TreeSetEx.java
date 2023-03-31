@@ -8,13 +8,15 @@ public class TreeSetEx {
 		
 		TreeSet treeset = new TreeSet();
 		
-		/*
-		 * treeset.add("A"); //ascii val is 65
-		 * 
-		 * treeset.add("a"); // 97
-		 * 
-		 * treeset.add("B"); treeset.add("Z"); treeset.add("L");
-		 */
+		
+		  treeset.add("A"); 
+		  
+		  treeset.add("a"); // 97
+		  
+		  treeset.add("B"); 
+		  treeset.add("Z");
+		  treeset.add("L");
+		 
 		
 	//	treeset.add(1);
 		// treeset.add("A");

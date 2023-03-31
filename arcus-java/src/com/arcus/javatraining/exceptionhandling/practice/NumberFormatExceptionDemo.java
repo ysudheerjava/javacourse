@@ -1,4 +1,4 @@
-package com.arcus.javatraining.exceptions.customexceptions;
+package com.arcus.javatraining.exceptionhandling.practice;
 // Java Program to illustrate NumberFormatException
 
 // Importing Scanner class to take
@@ -6,11 +6,10 @@ package com.arcus.javatraining.exceptions.customexceptions;
 import java.util.Scanner;
 
 // Class
-public class GFG {
+public class NumberFormatExceptionDemo {
 
 	// Main driver method
-	public static void main(String[] arg)
-	{
+	public static void main(String[] arg) {
 		// Declaring an variable which
 		// holds the input number entered
 		int number;
@@ -39,8 +38,7 @@ public class GFG {
 
 				// If number is valid, print and display
 				// the message and number
-				System.out.println("You entered: "
-								+ number);
+				System.out.println("You entered: " + number);
 
 				// Get off from this loop
 				break;
@@ -50,8 +48,7 @@ public class GFG {
 			catch (NumberFormatException e) {
 
 				// Print the message if exception occurred
-				System.out.println(
-					"NumberFormatException occurred");
+				System.out.println("NumberFormatException occurred");
 			}
 		}
 	}

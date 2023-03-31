@@ -12,14 +12,16 @@ public class Java8Supplier1 {
 	public static void main(String[] args) {
 
 		Supplier<LocalDateTime> s = () -> LocalDateTime.now();
+		
 		LocalDateTime time = s.get();
 
 		System.out.println(time);
 
-		Supplier<String> s1 = () -> dtf.format(LocalDateTime.now());
-		String time2 = s1.get();
-
-		System.out.println(time2);
+		  
+		 Supplier<String> s1 = () -> dtf.format(LocalDateTime.now());
+		  String time2 =s1.get();
+		  System.out.println(time2);
+		 
 
 	}
 

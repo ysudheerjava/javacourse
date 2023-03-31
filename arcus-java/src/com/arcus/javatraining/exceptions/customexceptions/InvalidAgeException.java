@@ -7,5 +7,4 @@ public class InvalidAgeException extends Exception {
 	}
 }
 
-
 //try with RuntimeException and checked exception Exception

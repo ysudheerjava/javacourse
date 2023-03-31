@@ -9,29 +9,41 @@ import java.sql.Statement;
 public class JDBCTest {
 
 	public static void main(String[] args) throws SQLException {
-		
-		Connection connection=null;
-		Statement  statement;
+
+		Connection connection = null;
+		Statement statement;
 		try {
 
 			// Step 1: Loading and registering drivers
 
 			// Loading driver using forName() method
-			Class.forName("com.mysql.cj.jdbc.Driver");
+			//	Class.forName("com.mysql.cj.jdbc.Driver");
 
-			// Registering driver using DriverManager
-			 connection = DriverManager.getConnection("jdbc:mysql:///employee", "root", "password");
+			// Step 2: Create the connection object
+
+			// url syntax for mysql - protocol//[hosts][/database][?properties]
+			// jdbc:mysql://mysql.db.server:3306/my_database
+
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/employee", "root", "password");
 
 			// Step 3: Create a statement
-			
-			//3 types of statements - Statement, PreparedStatement, Callable Statement
-			
-			
-			 statement = connection.createStatement();
+
+			// 3 types of statements - Statement, PreparedStatement,  Callable Statement
+
+			statement = connection.createStatement();
 			String sql = "select * from empdetails";
 
+			
+			/*
+			 * String tableSql = "CREATE TABLE IF NOT EXISTS emptab" +
+			 * "(emp_id int PRIMARY KEY AUTO_INCREMENT, name varchar(30)," +
+			 * "position varchar(30), salary double)"; statement.execute(tableSql);
+			 * 
+			 */
 			// Step 4: Execute the query
-			//2 different execute methods - executeQuery(), executeUpdate()
+			// 2 different execute methods - executeQuery(), executeUpdate()
+
+			// ResultSet result= statement.executeQuery("select * from empdetails");
 			ResultSet result = statement.executeQuery(sql);
 
 			// Step 5: Process the results
@@ -45,6 +57,7 @@ public class JDBCTest {
 				System.out.println("ID: " + result.getString("empid"));
 				System.out.println("Name: " + result.getString("empname"));
 				System.out.println("Age:" + result.getString("empage"));
+				System.out.println();
 			}
 		}
 
@@ -56,17 +69,18 @@ public class JDBCTest {
 		}
 
 		// Catching generic ClassNotFoundException if any
-		catch (ClassNotFoundException e) {
+		/*
+		 * catch (ClassNotFoundException e) {
+		 * 
+		 * // Print and display the line number // where exception occurred
+		 * e.printStackTrace(); }
+		 */
 
-			// Print and display the line number
-			// where exception occurred
-			e.printStackTrace();
-		}
-		
 		finally {
-			
-			if(connection!=null) {
-				connection.close();}
+
+			if (connection != null) {
+				connection.close();
+			}
 		}
 	}
 

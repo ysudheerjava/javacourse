@@ -27,7 +27,7 @@ Autoboxing:
 The automatic conversion of primitive data type into its corresponding 
 wrapper class
 
-Unboxing: 
+AutoUnboxing: 
 ========
 The automatic conversion of wrapper class  into its corresponding primitive types.
 

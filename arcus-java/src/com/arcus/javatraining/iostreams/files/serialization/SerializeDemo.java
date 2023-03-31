@@ -1,6 +1,5 @@
 package com.arcus.javatraining.iostreams.files.serialization;
 
-
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
@@ -23,7 +22,7 @@ public class SerializeDemo {
 		oos.flush();
 		oos.close();
 		fos.close();
-		
+
 		System.out.println("Student object saved/persisted");
 
 	}

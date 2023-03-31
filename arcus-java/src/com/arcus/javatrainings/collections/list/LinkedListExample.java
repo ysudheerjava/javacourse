@@ -8,7 +8,7 @@ public class LinkedListExample {
 
 		LinkedList<String> ll = new LinkedList<>();
 
-		ll.add("Aarcus");
+		ll.add("Arcus");
 		ll.add(null);
 
 		System.out.println(ll);

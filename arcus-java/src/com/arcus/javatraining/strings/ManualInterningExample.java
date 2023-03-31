@@ -1,25 +1,22 @@
 package com.arcus.javatraining.strings;
 
+
+//Example demonstrating String interning
 public class ManualInterningExample {
 	public static void main(String args[]) {
 
-		//String constantString = "Sudheer";
+		String myInstitute= "Arcus"; //String pool
 		
-		String myName= "Sudheer"; //String pool
-		
-		String myName1 = new String("Sudheer"); //not in pool
+		String myCompany = new String("Arcus"); //not in pool
 
-		System.out.println(myName == myName1);
+		System.out.println(myInstitute == myCompany);
 	
-		String internedString = myName1.intern(); //myName1 is moved to String literal pool
+		String internedString = myCompany.intern(); 		
+		System.out.println(myInstitute == internedString);
 		
-		System.out.println(myName == internedString);
+		
 
-		/*
-		 * String internedString = myName.intern();
-		 * 
-		 * System.out.println(constantString == internedString);
-		 */
+	
 		
 		
 		

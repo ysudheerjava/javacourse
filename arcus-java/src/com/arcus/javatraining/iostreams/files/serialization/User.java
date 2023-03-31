@@ -5,8 +5,9 @@ import java.io.Serializable;
 public class User implements Serializable{
 	
 	String name;
-	transient String password;
-	int age;
+    transient String password;
+	//String password;
+	transient int age;
 	
 	
 	static int myvar=10;

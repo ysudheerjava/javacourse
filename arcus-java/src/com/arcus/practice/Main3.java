@@ -66,6 +66,9 @@ class Main3 {
 			result += key + ":" + map.get(key);
 		}
 		System.out.println(result);
+		// new String[] {"X:-1","Y:1","X:-4","B:3","X:5"}
+					// new String[] {"Z:0","A:-1"}
+					// new String[] {"Z:0","B:1","A:2"}
 
 	}
 

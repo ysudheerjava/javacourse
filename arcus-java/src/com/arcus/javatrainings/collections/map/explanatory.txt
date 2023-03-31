@@ -7,7 +7,7 @@ Map
 -  Therefore it behaves a bit differently from the rest of the collection types. - 
 -  A map contains unique keys.
 -  Maps are perfect to use for key-value association mapping 
--  A Map cannot contain duplicate keys and 
+-  A Map cannot contain duplicate keys and can have duplicate values. 
 -  Both keys and values are objects
 -  Each key value pair is called Entry.
 -  Some implementations allow null key and null values like the HashMap and LinkedHashMap, 
@@ -102,38 +102,6 @@ Constructors:
 2. TreeMap tree = new TreeMap(Comparator c);
 3. TreeMap t = new  TreeMap(SortedMap m);
 4. TreeMap t = New TreeMap(Map m);
-
-
-
-
-
-
-
-
-   
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

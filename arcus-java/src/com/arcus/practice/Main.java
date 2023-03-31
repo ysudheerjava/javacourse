@@ -42,17 +42,19 @@ class Main {
 
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
+		
+	
 		try (// keep this function call here
 				Scanner s = new Scanner(System.in)) {
-			
-			//String strArr = s.nextLine();
-			
+
+			// String strArr = s.nextLine();
+		
 			String[] strArr = s.nextLine().replaceAll("[ \"{}\\]\\[(new|String)]", "").split(",");
 
 			/*
 			 * for (String str : strArr) { System.out.println(str); }
 			 */
-
+			
 			Map<String, Integer> map = SearchingChallenge(strArr);
 			String result = "";
 			for (String key : map.keySet()) {
@@ -64,8 +66,9 @@ class Main {
 				result += key + ":" + map.get(key);
 			}
 			System.out.println(result);
-			// new String[]{"A:22","D:3","C:4","A:-22"}
-			// new String[]{"A:22","D:3","C:4","A:-22","B:0","C:0","X:-100","X:100"}
+			// new String[] {"X:-1","Y:1","X:-4","B:3","X:5"}
+			// new String[] {"Z:0","A:-1"}
+			// new String[] {"Z:0","B:1","A:2"}
 		}
 
 	}

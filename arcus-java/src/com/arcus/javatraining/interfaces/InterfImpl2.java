@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.arcus.javatraining.interfaces.functional.Interf1;
+import com.arcus.javatraining.interfaces.functional.Interf2;
+import com.arcus.javatraining.interfaces.functional.Interf3;
+
 public class InterfImpl2 {
 
 	public static void main(String[] args) {

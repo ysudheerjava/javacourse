@@ -20,13 +20,10 @@ public class EnclosingClass {
 		private void run1() {
 			EnclosingClass.x=20;
 			// method implementation
-			
 			EnclosingClass cl = new EnclosingClass();
 			doSo();
 			cl.mymethod1();
 		}
-		
-		
 		
 	}
 

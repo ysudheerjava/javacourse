@@ -50,6 +50,10 @@ class Main5 {
 		return map;
 	}
 
+//new String[] {"X:-1","Y:1","X:-4","B:3","X:5"}
+	//X:-1,Y:1,X:-4,B:3,X:5
+//new String[] {"Z:0","A:-1"}
+	//Z:0,A:-1
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		// keep this function call here

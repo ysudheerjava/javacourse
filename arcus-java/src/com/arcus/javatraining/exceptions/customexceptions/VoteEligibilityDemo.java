@@ -2,12 +2,11 @@ package com.arcus.javatraining.exceptions.customexceptions;
 // class representing custom exception  
 
 // class that uses custom exception InvalidAgeException  
-public class TestCustomException1 {
+public class VoteEligibilityDemo {
 
 	// method to check the age
 	static void validate(int age) throws InvalidAgeException {
 		if (age < 18) {
-
 			// throw an object of user defined exception
 			throw new InvalidAgeException("age is not valid to vote");
 		} else {
@@ -19,7 +18,7 @@ public class TestCustomException1 {
 	public static void main(String args[]) {
 		try {
 			// calling the method
-			validate(13);
+			validate(44);
 		} catch (InvalidAgeException ex) {
 			System.out.println("Caught the exception");
 

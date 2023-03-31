@@ -1,6 +1,5 @@
  HashSet:
 =========
-
 - The Underlying Data Structure is Hashtable.
 - The HashSet is a class that implements the Set interface. 
 - It is used to store the objects in a hashtable; 
@@ -68,8 +67,23 @@ TreeSet class
 
 - Insertion Order is not Preserved and it is Based on Some Sorting Order.
 - Heterogeneous Objects are Not Allowed.
-- If we are trying to Insert we will get RuntimeException Saying ClassCastException.
+- In treeset and treemap heterogeneous objects are not allowed because sorting order is required for both.
+- If heterogeneous objects are allowed then natural sorting cannot be performedS
+- All elements are inserted according to some sorting order
+- If we are trying to Insert heterogeneous objects, we will get RuntimeException Saying ClassCastException.
+- Null insertion is allowed only once
 - Duplicate Objects are Not allowed.
+
+
+Treeset constructors:
+
+1. Treeset t = new TreeSet();
+//default natural sorting order
+
+2. TreeSet t = new Treeset(Comparator c)  //customised sorting
+3. TreeSet t = new Treeset(Collection c)//pass any collection object, equivalent treeset object is created. 
+4. TreeSet t = new TreeSet(SortedSet s)//pass any sorted set equivalent object
+
 
 obj1.compareTo(obj2)
 -  Returns –ve if and Only if obj1 has to Come Before obj2

@@ -1,4 +1,4 @@
-package com.arcus.javatraining.interfaces;
+package com.arcus.javatraining.interfaces.functional;
 
 @FunctionalInterface
 public interface Interf2 {

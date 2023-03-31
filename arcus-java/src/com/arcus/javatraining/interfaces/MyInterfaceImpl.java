@@ -27,4 +27,16 @@ public class MyInterfaceImpl implements MyInterface,Animal {
 		
 	}
 
+	@Override
+	public void animalColour() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean isReptile() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

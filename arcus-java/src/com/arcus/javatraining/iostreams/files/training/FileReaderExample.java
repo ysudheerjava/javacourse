@@ -15,6 +15,7 @@ public class FileReaderExample {
 		FileReader fw = new FileReader(file);
 		
 		
+		
 	
 
 	}

@@ -14,4 +14,14 @@ public class Dog implements Animal {
 
 	}
 
+	public void animalColour() {
+		System.out.println("Black");
+
+	}
+
+	public boolean isReptile() {
+
+		return false;
+	}
+
 }

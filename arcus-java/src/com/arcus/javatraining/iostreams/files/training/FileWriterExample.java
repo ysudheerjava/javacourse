@@ -20,7 +20,10 @@ public class FileWriterExample {
 			fw.write("String");
 			char[] ch = {'A','R','C','U'};
 			fw.write("\n");
+		
 			fw.write(ch);
+			fw.write("\n");
+			fw.write(100);
 			fw.flush();
 			
 			fw.close();

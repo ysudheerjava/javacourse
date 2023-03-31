@@ -1,4 +1,4 @@
-package com.arcus.javatraining.interfaces;
+package com.arcus.javatraining.interfaces.functional;
 
 @FunctionalInterface
 
@@ -6,8 +6,9 @@ interface Iface1 {
 
 	final String myVar = "ArcusInfoTech";
 
-	public void add(int i, int j);
+	//public void add(int i, int j);
 	
+	public String getText(String text);
 	
 	
 	

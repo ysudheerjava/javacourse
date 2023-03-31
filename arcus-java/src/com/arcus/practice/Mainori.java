@@ -30,14 +30,6 @@ class Mainori {
 			}
 		}
 
-		/*
-		 * Iterator<?> it = map.entrySet().iterator(); while (it.hasNext()) {
-		 * Entry<String, Integer> entry = (Entry<String, Integer>) it.next(); if
-		 * (entry.getValue().equals(0)) { it.remove(); }
-		 * 
-		 * }
-		 */
-
 		for (Iterator<Map.Entry<String, Integer>> it = map.entrySet().iterator(); it.hasNext();) {
 			Map.Entry<String, Integer> entry = it.next();
 			if (entry.getValue().equals(0)) {

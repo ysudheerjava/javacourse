@@ -15,7 +15,8 @@ public class FunctionDemo {
 		  
 		 System.out.println(g.apply("Sudheer"));
 		  
-		  Function<String, String> h = s -> s.toUpperCase();
+		
+		 Function<String, String> h = s -> s.toUpperCase();
 		  System.out.println(h.apply("Sudheer"));
 	}
 
