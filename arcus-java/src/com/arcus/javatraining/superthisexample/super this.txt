@@ -1,0 +1,91 @@
+
+super() and this():
+
+Constructor calls to call super class constructor and current class constructor
+
+Case 1:
+--------
+
+class P{
+}
+class X extends P{
+
+}
+
+above is Valid
+
+
+Case 2:
+--------
+class P{
+
+P(){}
+}
+class X extends P{
+
+}
+
+The above is also valid
+
+
+Case 3:
+--------
+class P{
+
+P(int i){}
+}
+class X extends P{
+
+}
+
+The above is invalid
+
+
+Internal concept behind the constructors:
+Case1: 
+
+
+
+
+
+
+
+
+
+Super, this
+To refer super class instance members
+to refer current class instance members
+
+class P{
+
+String s ="s";
+
+}
+
+class c extends P{
+String s = child variable
+
+public void m1()
+	{
+	sop (s);
+	}
+}
+
+The above snippet s prints current class variable s i.e child variable
+
+In child class if we dont want to refer to child class instance member but super class variable then 
+we use super keyword.
+It can be used method, constructor
+
+
+this:
+
+this means current objects instance members.
+
+this and super always talks about objects or instances.
+
+If the method is static, it is nowehere related to object.
+
+super and this can be used anywhere, except static area. they are not allowed to use inside stataic area,
+
+
