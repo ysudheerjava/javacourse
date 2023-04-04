@@ -6,8 +6,10 @@ public class StringBufferExample {
 
 	public static void main(String[] args) {
 
-		String str = new String("Arcus");
+		//creates an immutable String with String Class
+		String str = new String("Arcus");  
 
+		//creates a Mutable String with StringBuffer class
 		StringBuffer strBuff = new StringBuffer("Arcus");
 
 		System.out.println();
@@ -17,8 +19,9 @@ public class StringBufferExample {
 		System.out.println("The memory address of str is " + VM.current().addressOf(str));
 		System.out.println("The memory address strBuffof is " + VM.current().addressOf(strBuff));
 
-		str = str.concat("Infotech");
-		strBuff = strBuff.append("InfoTech"); // appends a string in the previously defined string.
+		str.concat("Infotech");
+		
+		strBuff.append("InfoTech"); // appends a string in the previously defined string.
 
 		System.out.println();
 		System.out.println("****************After modidfication********************");

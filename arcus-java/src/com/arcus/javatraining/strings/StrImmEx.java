@@ -1,32 +1,27 @@
 package com.arcus.javatraining.strings;
 
+import org.openjdk.jol.vm.VM;
+
 public class StrImmEx {
 
 	public static void main(String[] args) {
 	
 		String newString = "Hello"; // String literal
 		
-		String anotherStsring=" Arcus";
+		System.out.println(newString); //Hello
 		
-		newString = newString.concat(anotherStsring);
+		System.out.println("The memory address of newString is " + VM.current().addressOf(newString));
+	
 		
-		System.out.println(newString);
+		String anotherString= newString.concat(" World!");
 		
-		//newString.concat(" World");
+		System.out.println("The memory address of anotherString is " + VM.current().addressOf(anotherString));
+		
+	
 		
 		
+	
 		
-		
-		
-		/*
-		 * String modifiedString = newString.concat(" World");
-		 * 
-		 * System.out.println(modifiedString);
-		 * 
-		 * System.out.println(newString); System.out.println(modifiedString);
-		 */
-
-
 	}
 
 }

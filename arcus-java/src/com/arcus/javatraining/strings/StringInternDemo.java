@@ -10,9 +10,8 @@ public class StringInternDemo {
 		System.out.println(myInstitute == myCompany);
 		
 		myCompany.intern();
+		
 	
-		
-		
 
 		
 		
